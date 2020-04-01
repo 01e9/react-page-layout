@@ -14,7 +14,7 @@
     "clean": "rm -rf es/ lib/",
     "build": "npm run clean && npm run build:es && npm run build:lib",
     "build:es": "NODE_ENV=production tsc",
-    "build:lib": "NODE_ENV=production tsc --module commonjs --outDir lib"
+    "build:lib": "NODE_ENV=production npm run build:es -- --module commonjs --outDir lib"
   },
   "license": "MIT",
   "dependencies": {
