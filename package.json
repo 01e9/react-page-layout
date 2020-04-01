@@ -33,5 +33,14 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
     "typescript": "^3.8.3"
-  }
+  },
+  "files": [
+    "package.json",
+    "package-lock.json",
+    "LICENSE",
+    "README.md",
+    "es",
+    "lib",
+    "dist"
+  ]
 }
