@@ -1,6 +1,22 @@
 {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
     "extends": ["airbnb-typescript"],
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/parsers": {
+            "@typescript-eslint/parser": [ ".ts", ".tsx" ]
+        },
+        "import/resolver": {
+            "typescript": {}
+        }
+    },
     "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
         "project": "./tsconfig.json"
     }
 }
