@@ -1,3 +1,6 @@
+[![Stable Release](https://img.shields.io/npm/v/@01e9/react-page-layout.svg)](https://npm.im/@01e9/react-page-layout)
+[![license](https://badgen.now.sh/badge/license/MIT)](./LICENSE)
+
 ## About
 
 This library allows you to share a common layout across many different components.
