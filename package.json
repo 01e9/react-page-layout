@@ -3,14 +3,18 @@
   "version": "0.9.8",
   "description": "Layout system for react",
   "author": "Jose R Villalon Soler",
-  "main": "build/index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "repository": {
     "url": "git@github.com:monvillalon/react-page-layout.git",
     "type": "git"
   },
   "scripts": {
-    "clean": "rm -rf build && mkdir build",
-    "build": "npm run clean; NODE_ENV=production babel -d ./build ./src -s"
+    "clean": "rm -rf es/ lib/",
+    "build": "npm run clean && npm run build:es && npm run build:lib",
+    "build:es": "NODE_ENV=production tsc",
+    "build:lib": "NODE_ENV=production tsc --module commonjs --outDir lib"
   },
   "license": "MIT",
   "dependencies": {
@@ -40,7 +44,6 @@
     "LICENSE",
     "README.md",
     "es",
-    "lib",
-    "dist"
+    "lib"
   ]
 }
