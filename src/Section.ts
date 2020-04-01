@@ -1,20 +1,19 @@
-/* eslint no-unreachable: off, react/require-render-return: off */
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 
-class Section extends PureComponent {
+export interface SectionProps {
+  slot: string;
+  children?: React.ReactNode;
+}
 
-  static displayName = 'Section';
-
-  static propTypes = {
-    slot: PropTypes.string.isRequired,
-    children: PropTypes.node,
-  };
-
+class Section extends React.PureComponent<SectionProps> {
   render() {
     throw new Error('You must only use <Section> inside a <Page>');
+    // eslint-disable-next-line no-unreachable
+    return null;
   }
-
 }
+
+// @ts-ignore
+Section.displayName = 'Section';
 
 export default Section;
