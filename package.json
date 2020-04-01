@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Layout system for react",
   "author": "Jose R Villalon Soler",
+  "contributors": [
+    "Oleg Artene"
+  ],
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
