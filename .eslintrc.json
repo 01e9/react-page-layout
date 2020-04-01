@@ -1,7 +1,10 @@
 {
     "root": true,
     "parser": "@typescript-eslint/parser",
-    "extends": ["airbnb-typescript"],
+    "extends": [
+        "airbnb-typescript",
+        "plugin:react/recommended"
+    ],
     "settings": {
         "react": {
             "version": "detect"
@@ -13,7 +16,12 @@
             "typescript": {}
         }
     },
+    "rules": {
+        "max-len": ["error", { "code": 120 }]
+    },
     "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true
         },
