@@ -1,13 +1,13 @@
 {
-  "name": "react-page-layout",
-  "version": "0.9.8",
+  "name": "@01e9/react-page-layout",
+  "version": "1.0.0",
   "description": "Layout system for react",
   "author": "Jose R Villalon Soler",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
   "repository": {
-    "url": "git@github.com:monvillalon/react-page-layout.git",
+    "url": "git@github.com:01e9/react-page-layout.git",
     "type": "git"
   },
   "scripts": {

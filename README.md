@@ -1,22 +1,23 @@
 ## About
 
-**react-page-layout** allows you to share a common layout across many different components. Very usefull with something like [react-router](https://github.com/ReactTraining/react-router) to abstract the main elements of your design across many routes and reducing code duplication.
+This library allows you to share a common layout across many different components.
+Very useful with something like [react-router](https://github.com/ReactTraining/react-router) to abstract the main elements of your design across many routes and reducing code duplication.
 
 ## Installation
 
 ```
-npm install react-page-layout --save
+npm install @01e9/react-page-layout --save
 ```
 
 or if you use yarn
 
 ```
-yarn add react-page-layout
+yarn add @01e9/react-page-layout
 ```
 
 ## Preview
 
-![Preview](https://raw.githubusercontent.com/monvillalon/react-page-layout/master/example.gif)
+![Preview](https://raw.githubusercontent.com/@01e9/react-page-layout/master/example.gif)
 
 ## Example
 
@@ -26,7 +27,8 @@ and run `npm install; npm start`
 
 ## Overview
 
-This library allows for you to concentrate all your layout logic into its own components. It allows you to create a layout that can have serveral **&lt;Slots&gt;**  where you can inject content.
+This library allows for you to concentrate all your layout logic into its own components.
+It allows you to create a layout that can have serveral **&lt;Slots&gt;**  where you can inject content.
 
 A layout aware component can use the **&lt;Page&gt;** 
 and **&lt;Section&gt;** to fill out the slots.
@@ -37,7 +39,7 @@ and **&lt;Section&gt;** to fill out the slots.
 
 	```js
 	import React, { Component } from 'react';
-	import { Slot } from 'react-page-layout';
+	import { Slot } from '@01e9/react-page-layout';
 	
 	class PublicLayout extends Component {
 		render() {
@@ -60,7 +62,7 @@ and **&lt;Section&gt;** to fill out the slots.
 	```js
 	import React, { Component } from 'react';
 	import { render } from 'react-dom';
-	import { LayoutProvider } from 'react-page-layout';
+	import { LayoutProvider } from '@01e9/react-page-layout';
 	import PublicLayout from './layouts/public';
 	import LoginPage from './pages/login';
 	
@@ -92,7 +94,7 @@ and **&lt;Section&gt;** to fill out the slots.
 3. Next you have to create pages. The pages provide the content for the different slots in your layout. To do this we use two components, **&lt;Page&gt;** and **&lt;Section&gt;**.
 
 	```js
-	import { Page, Section } from 'react-page-layout';
+	import { Page, Section } from '@01e9/react-page-layout';
 	
 	class LoginPage extends Component {
 			render() {

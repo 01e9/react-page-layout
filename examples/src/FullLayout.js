@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Slot } from 'react-page-layout';
+import { Slot } from '@01e9/react-page-layout';
 
 function PrivateLayout(props) {
   const { title } = props;

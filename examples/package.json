@@ -1,6 +1,6 @@
 {
-  "name": "react-page-layout-simple-example",
-  "version": "1.0.1",
+  "name": "example",
+  "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -12,7 +12,7 @@
     "prop-types": "^15.5.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-page-layout": "file:../"
+    "@01e9/react-page-layout": "file:../"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
