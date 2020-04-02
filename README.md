@@ -20,7 +20,7 @@ yarn add @01e9/react-page-layout
 
 ## Preview
 
-![Preview](https://raw.githubusercontent.com/@01e9/react-page-layout/master/example.gif)
+![Preview](https://raw.githubusercontent.com/01e9/react-page-layout/master/example.gif)
 
 ## Example
 
