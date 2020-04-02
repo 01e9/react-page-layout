@@ -7,13 +7,13 @@ interface SlotProps {
   wrapper?: React.ReactElement;
   className?: string;
   style?: Record<string, string>;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 class Slot extends React.Component<SlotProps> {
   renderSection = (context: LayoutContextContextProps): React.ReactNode => {
     const {
-      className, style = {}, component = 'div', wrapper, name, children: slotChildren,
+      className, style = {}, component = 'div', wrapper, name, children: slotChildren = null,
     } = this.props;
     const section = context.getSection(name);
     const children = section ? section.props.children : slotChildren;
