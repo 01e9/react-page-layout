@@ -3,7 +3,7 @@ import { LayoutContextContextConsumer, LayoutContextContextProps } from './Layou
 
 interface SlotProps {
   name: string;
-  component?: React.ComponentType<{ className?: string, style: Record<string, string> }>;
+  component?: React.ComponentType<{ className?: string, style?: Record<string, string> }>;
   wrapper?: React.ReactElement;
   className?: string;
   style?: Record<string, string>;
