@@ -10,7 +10,7 @@ import Section from './Section';
 
 export interface PageProps {
   layout: string;
-  children: React.ReactNode;
+  children: React.ReactNode | React.ReactNodeArray;
 }
 
 class Page extends React.PureComponent<PageProps> {

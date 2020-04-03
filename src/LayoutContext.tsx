@@ -3,7 +3,7 @@ import { SectionProps } from './Section';
 
 export interface LayoutContextProps {
   sections: Record<string, React.Component<SectionProps>>;
-  children: React.ReactElement;
+  children: React.ReactNode;
 }
 
 export interface LayoutContextContextProps {

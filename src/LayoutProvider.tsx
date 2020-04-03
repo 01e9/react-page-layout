@@ -4,7 +4,7 @@ type LayoutType = Parameters<typeof React.createElement>[0];
 
 export interface LayoutProviderProps {
   layouts: Record<string, LayoutType>;
-  children: React.ReactElement;
+  children: React.ReactNode;
 }
 
 export interface LayoutProviderContextProps {
