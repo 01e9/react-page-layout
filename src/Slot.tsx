@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { LayoutContextContextConsumer, LayoutContextContextProps } from './LayoutContext';
+import { CSSProperties } from "react";
 
 interface SlotProps {
   name: string;
-  component?: React.ComponentType<{ className?: string, style?: Record<string, string> }>;
+  component?: React.ComponentType<{ className?: string, style?: CSSProperties }>;
   wrapper?: React.ReactElement;
   className?: string;
   style?: Record<string, string>;
