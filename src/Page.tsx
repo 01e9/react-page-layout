@@ -1,6 +1,5 @@
 import * as React from 'react';
 import isPlainObject from 'lodash.isplainobject';
-import isArray from 'lodash.isarray';
 import { LayoutProviderContextConsumer, LayoutProviderContextProps } from './LayoutProvider';
 import LayoutContext from './LayoutContext';
 
@@ -23,7 +22,7 @@ class Page extends React.PureComponent<PageProps> {
       }
       return {};
     }
-    if (isArray(parent)) {
+    if (Array.isArray(parent)) {
       const getSections = this.getSections.bind(this);
 
       return (parent as any[]).reduce((sections, section) => ({ ...sections, ...getSections(section) }), {});
