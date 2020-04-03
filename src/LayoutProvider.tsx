@@ -1,27 +1,29 @@
 import * as React from 'react';
 
+type LayoutType = Parameters<typeof React.createElement>[0];
+
 export interface LayoutProviderProps {
-  layouts: Record<string, React.Component>;
+  layouts: Record<string, LayoutType>;
   children: React.ReactElement;
 }
 
 export interface LayoutProviderContextProps {
-  getLayout: (name: string) => any;
+  getLayout: (name: string) => LayoutType;
 }
 
 const Context = React.createContext<LayoutProviderContextProps>({
-  getLayout: () => null,
+  getLayout: () => 'div',
 });
 
 export const LayoutProviderContextConsumer = Context.Consumer;
 
 class LayoutProvider extends React.PureComponent<LayoutProviderProps> {
-  getLayout = (name: string): any => {
+  getLayout = (name: string): LayoutType => {
     const { layouts } = this.props;
     return layouts[name];
   };
 
-  render() {
+  render(): React.ReactNode {
     const { children } = this.props;
     const { getLayout } = this;
     const { Provider } = Context;

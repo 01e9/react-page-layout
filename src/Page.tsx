@@ -33,11 +33,8 @@ class Page extends React.PureComponent<PageProps> {
 
   getLayout(name: string, context: LayoutProviderContextProps) {
     const layout = context.getLayout(name);
-    const { children } = this.props;
-    const props = { ...this.props };
-    delete props.layout;
-    delete props.children;
-    return React.createElement(layout, props, children);
+    const { layout: layoutName, children, ...layoutProps } = this.props;
+    return React.createElement(layout, layoutProps, children);
   }
 
   renderContext = (context: LayoutProviderContextProps): React.ReactNode => {
